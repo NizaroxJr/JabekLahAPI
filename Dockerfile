@@ -1,15 +1,14 @@
-FROM ubuntu:latest AS build
+# Fetching latest version of Java
+FROM openjdk:18
 
-RUN apt-get update
-RUN apt-get install openjdk-19-jdk -y
-COPY . .
+# Setting up work directory
+WORKDIR /app
 
-RUN ./gradlew bootJar --no-daemon
+# Copy the jar file into our app
+COPY ./target/spring-1.jar /app
 
-FROM openjdk:19-jdk-slim
-
+# Exposing port 8080
 EXPOSE 8080
 
-COPY --from=build /build/libs/demo-1.jar app.jar
-
-ENTRYPOINT ["java", "-jar", "app.jar"]
+# Starting the application
+CMD ["java", "-jar", "spring-1.jar"]
