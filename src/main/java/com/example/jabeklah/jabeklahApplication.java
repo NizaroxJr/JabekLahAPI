@@ -20,7 +20,7 @@ public class jabeklahApplication {
         SpringApplication.run(jabeklahApplication.class, args);
     }
 
-    @Bean
+    /*@Bean
     CommandLineRunner run(FactureService factureService, AgentService agentService, AdminService adminService) {
         return args -> {
 
@@ -46,14 +46,12 @@ public class jabeklahApplication {
             factureService.createFacture("unpaied", 27.0, "paiment facture d'eau penalite ", date, "LYDEC", "0697663544");
             factureService.createFacture("unpaied", 200.0, "paiment facture d'eau penalite", date, "REDAL", "0697663544");
 
-            adminService.saveAdmin(new Admin("Admin", "admin", "admin@admin.com"));
-            adminService.createAgent("agent", "agent", "CIN", "A123"
-                    , new Date(), "marrakech", "agent@agent.com", "0697663544", "az1212",
-                    "az1212");
-            agentService.createUser("client", "client", "client", "client@client.com", "0697663544");
+            //adminService.saveAdmin(new Admin("Admin", "admin", "admin@admin.com"));
+            //adminService.createAgent("agent", "agent", "CIN", "A123", new Date(), "marrakech", "agent@agent.com", "0697663544", "az1212","az1212");
+            //agentService.createUser("client", "client", "client", "client@client.com", "0697663544");
 
         };
-    }
+    }*/
 }
 
 
