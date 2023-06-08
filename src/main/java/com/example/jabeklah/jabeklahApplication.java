@@ -20,7 +20,7 @@ public class jabeklahApplication {
         SpringApplication.run(jabeklahApplication.class, args);
     }
 
-    /*@Bean
+   /* @Bean
     CommandLineRunner run(FactureService factureService, AgentService agentService, AdminService adminService) {
         return args -> {
 
