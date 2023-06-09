@@ -1,9 +1,9 @@
-package com.example.ensapay.Controllers;
+package com.example.jabeklah.Controllers;
 
 
-import com.example.ensapay.models.Facture;
-import com.example.ensapay.request.FactureRequest;
-import com.example.ensapay.service.FactureService;
+import com.example.jabeklah.models.Facture;
+import com.example.jabeklah.request.FactureRequest;
+import com.example.jabeklah.service.FactureService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
