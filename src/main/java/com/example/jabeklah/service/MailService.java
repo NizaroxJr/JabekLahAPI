@@ -33,11 +33,11 @@ public class MailService {
         Session session = Session.getInstance(props, new javax.mail.Authenticator() {
             protected PasswordAuthentication getPasswordAuthentication() {
                 System.out.println("in authentication");
-                return new PasswordAuthentication("jabeklah.services@gmail.com", "tyfxuctfeczaqgrw");
+                return new PasswordAuthentication("jabakallah.contact@gmail.com", "tvoeyynpcuoylfff");
             }
         });
         Message msg = new MimeMessage(session);
-        msg.setFrom(new InternetAddress("jabeklah.services@gmail.com", false));
+        msg.setFrom(new InternetAddress("jabakallah.contact@gmail.com", false));
 
         msg.setRecipients(Message.RecipientType.TO, InternetAddress.parse(recipient));
         msg.setSubject("jabeklah Application Services");
@@ -45,7 +45,7 @@ public class MailService {
         msg.setSentDate(new Date());
 
         Transport.send(msg);
-
+        System.out.println("Mail Sent Successfully Mail Service");
     }
 
 

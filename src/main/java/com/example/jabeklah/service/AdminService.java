@@ -113,7 +113,7 @@ public class AdminService {
                 "<li style='color:blue;'> User Name :  "+uid+" </li> " +
                 "<li style='color:blue;'> Password : "+pass+" </li> " +
                 "</ul>";
-        emailService.sendEmail(email,content);
+        //emailService.sendEmail(email,content);
         return  true;
     }
 

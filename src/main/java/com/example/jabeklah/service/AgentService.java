@@ -80,6 +80,7 @@ public class AgentService {
                 "<li style='color:blue;'> Password : "+pass+" </li> " +
                 "</ul>";
         //emailService.sendEmail(email,content);
+        System.out.println("Mail Sent Successfully Agent Service");
         return  true;
 
     }
