@@ -21,7 +21,6 @@ public class FactureController {
     private FactureService factureService;
 
     @PostMapping("/payerFacture")
-    @PreAuthorize("hasRole('CLIENT') ")
     public Boolean payerFacture(@Valid @RequestBody FactureRequest factureRequest) throws IOException {
         factureService.PayerFacture(factureRequest.getRef(),factureRequest.getOwnerphone());
         return true;
