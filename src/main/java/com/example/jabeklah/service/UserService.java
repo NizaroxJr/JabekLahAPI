@@ -58,7 +58,7 @@ return "password changed successfully for Client";
             System.out.println("type compte hase arrived empty null");
         }
         compte.setType_compte(typecompte);
-        compte.setSolde(0.0);
+        compte.setSolde(20000.0);
         compte.setComptename("checking Account");
         user.setCompte(compte);
         compteRepo.save(compte);
