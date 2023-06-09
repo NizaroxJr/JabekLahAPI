@@ -79,7 +79,7 @@ public class AgentService {
                 "<li style='color:blue;'> User Name :  "+email+" </li> " +
                 "<li style='color:blue;'> Password : "+pass+" </li> " +
                 "</ul>";
-        emailService.sendEmail(email,content);
+        //emailService.sendEmail(email,content);
         return  true;
 
     }
